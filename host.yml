@@ -1,0 +1,7 @@
+---
+- name: host file
+  hosts: all
+  tasks: 
+    - name: host var
+      debug:
+        msg: "{{URL}}"

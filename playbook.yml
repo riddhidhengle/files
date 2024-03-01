@@ -1,0 +1,10 @@
+---
+- name: 1st playbook
+  hosts: all
+  vars:
+    Hello: "DevOps"
+  tasks:
+    - name: 1st trial
+      debug:
+        msg: "{{Hello}}"
+...

@@ -1,0 +1,12 @@
+---
+- name: prompt file
+  hosts: all
+  vars_prompt:
+    - name: user_input
+      prompt: "password"
+  tasks:
+    - name: 1st prompt file
+      debug:
+        msg: "{{user_input}}"
+...
+
