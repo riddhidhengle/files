@@ -1,0 +1,12 @@
+---
+- name: loop playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: loop module
+      user: 
+        name: "{{item}}"
+        state: present
+      with_items:
+              - xyz
+              - abc

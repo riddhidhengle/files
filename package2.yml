@@ -1,0 +1,11 @@
+---
+- name: ubuntu pkg
+  hosts: all
+  become: yes
+  vars:
+    package: apache2
+  tasks:
+    - name: install pkg
+      apt:
+        name: "{{package}}"
+        state: absent
