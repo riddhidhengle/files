@@ -1,0 +1,18 @@
+---
+- name: tag playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: tag module for redhat
+      yum:
+        name: httpd
+        state: latest
+      ignore_errors: yes
+      tags: demo
+
+    - name: tag module for debain
+      apt:
+        name: apache2
+        state: latest
+      ignore_errors: yes
+      tags: demo2

@@ -1,0 +1,10 @@
+---
+- name: block in playbook
+  hosts: all
+  tasks:
+    - name: block in file
+      blockinfile: 
+        path: /root/.ssh/authorized_keys
+        block:
+          block in file module
+          in multi line

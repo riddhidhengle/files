@@ -1,0 +1,10 @@
+---
+- name: line in playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: line in file
+      lineinfile:
+        path: /root/.ssh/authorized_keys
+        line: 'hello'
+        state: absent

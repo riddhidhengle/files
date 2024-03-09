@@ -1,0 +1,14 @@
+---
+- name: tag playbook 2
+  hosts: all
+  become: true
+  tasks:
+    - name: 1st tag
+      debug:
+        msg: "first tag"
+      tags: demo1
+
+    - name: 2nd tag
+      debug:
+        msg: "second tag"
+      tags: demo2
