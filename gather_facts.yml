@@ -1,0 +1,8 @@
+--- 
+- name: Example playbook for gather fact
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Print the Message
+      debug:
+        msg "{{ansible}}"

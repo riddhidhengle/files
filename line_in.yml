@@ -6,5 +6,5 @@
     - name: line in file
       lineinfile:
         path: /root/.ssh/authorized_keys
-        line: 'hello'
-        state: absent
+        line: 'hello kjnregjknerkgn dngkjdnfgjnendgjkndiurg jnrgkjehriugh rkjgnkerhugteiut nkjrdgnkerhtie ndgjnrhgn ejnferjht djrnteurt djnfjreng nderjfnerjngjng ndjnfgertgn djrngfekjrnt kdjngkjrne'
+        state: present
